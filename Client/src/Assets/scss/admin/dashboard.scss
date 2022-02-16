@@ -1,0 +1,82 @@
+.containerDashboard {
+    height: 100%;
+    min-height: 100vh !important;
+    background-color: #fff;
+    overflow-y: hidden;
+
+    .wrapSidebar {
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+
+    .containerLayoutContent {
+
+
+        .wrapHeaderLayout {
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .wrapLayoutContent {
+            padding: 1rem;
+            // position: relative;
+        }
+
+        .wrapContentMain {
+            background-color: #fff;
+            padding: 1rem;
+            overflow-x: hidden !important;
+
+            &.dasboard {
+                display: flex;
+                margin: 0 auto;
+                justify-content: center;
+            }
+
+            .wrapItemDashboard {
+                min-width: 18vw;
+                min-height: 15vh;
+                height: 200px !important;
+                max-height: 15vh;
+                background-color: red;
+                margin: 0 10px;
+                font-size: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 4px;
+
+                &.greenStyle {
+                    background-color: #15A86B;
+                    color: #fff;
+                }
+
+                &.brownStyle {
+                    background-color: #FFA581;
+                    color: #fff;
+                }
+
+                &.blueStyle {
+                    background-color: #394F75;
+                    color: #fff;
+                }
+
+                &.redStyle {
+                    background-color: #FD5777;
+                    color: #fff;
+                }
+            }
+
+            .chartLeft {
+                width: 100%;
+                max-width: 80vw;
+            }
+        }
+    }
+}

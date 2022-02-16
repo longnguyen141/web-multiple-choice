@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700");
+
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+body {
+  overflow-x: hidden !important;
+}
+
+#notfound {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  left: 6vmin;
+  text-align: center;
+}
+
+.notfound-cog-wheel1,
+.notfound-cog-wheel2 {
+  transform: scale(0.7);
+}
+
+.notfound-cog1,
+.notfound-cog2 {
+  width: 40vmin;
+  height: 40vmin;
+  border-radius: 50%;
+  border: 6vmin solid #f3c623;
+  position: relative;
+}
+
+
+.notfound-cog2 {
+  border: 6vmin solid #4f8a8b;
+}
+
+.notfound-top,
+.notfound-down,
+.notfound-left,
+.notfound-right,
+.notfound-left-top,
+.notfound-left-down,
+.notfound-right-top,
+.notfound-right-down {
+  width: 10vmin;
+  height: 10vmin;
+  background-color: #f3c623;
+  position: absolute;
+}
+
+.notfound-cog2 .notfound-top,
+.notfound-cog2 .notfound-down,
+.notfound-cog2 .notfound-left,
+.notfound-cog2 .notfound-right,
+.notfound-cog2 .notfound-left-top,
+.notfound-cog2 .notfound-left-down,
+.notfound-cog2 .notfound-right-top,
+.notfound-cog2 .notfound-right-down {
+  background-color: #4f8a8b;
+}
+
+.notfound-top {
+  top: -14vmin;
+  left: 9vmin;
+}
+
+.notfound-down {
+  bottom: -14vmin;
+  left: 9vmin;
+}
+
+.notfound-left {
+  left: -14vmin;
+  top: 9vmin;
+}
+
+.notfound-right {
+  right: -14vmin;
+  top: 9vmin;
+}
+
+.notfound-left-top {
+  transform: rotateZ(-45deg);
+  left: -8vmin;
+  top: -8vmin;
+}
+
+.notfound-left-down {
+  transform: rotateZ(45deg);
+  left: -8vmin;
+  top: 25vmin;
+}
+
+.notfound-right-top {
+  transform: rotateZ(45deg);
+  right: -8vmin;
+  top: -8vmin;
+}
+
+.notfound-right-down {
+  transform: rotateZ(-45deg);
+  right: -8vmin;
+  top: 25vmin;
+}
+
+.notfound-cog2 {
+  position: relative;
+  left: -10vmin;
+  bottom: 10vmin;
+}
+
+h1 {
+  color: #142833;
+}
+
+.notfound-first-four {
+  position: relative;
+  left: 6vmin;
+  font-size: 40vmin;
+}
+
+.notfound-second-four {
+  position: relative;
+  right: 18vmin;
+  z-index: -1;
+  font-size: 40vmin;
+}
+
+.notfound-wrong-para {
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  bottom: 15vmin;
+  padding: 3vmin 12vmin 3vmin 3vmin;
+  font-weight: 600;
+  color: #092532;
+}

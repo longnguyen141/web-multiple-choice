@@ -1,0 +1,74 @@
+.wrapFormCreateCategory {
+    width: 60%;
+    padding: 1rem 1.5rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: relative;
+    margin: 0 auto;
+
+    .formItem-input {
+        display: flex;
+        flex-direction: column;
+
+        .input-item {
+            padding: 5px 12px;
+            margin: 8px 0;
+            flex: 1;
+            outline: none;
+            background-color: #fff;
+
+
+            &.select {
+                padding: 0 !important;
+
+                .ant-select-selection-item-remove {
+                    display: flex;
+                    align-items: center;
+                    border: none;
+                }
+
+            }
+
+            .errors {
+                display: block;
+                color: red;
+
+            }
+        }
+    }
+
+    .wrapFormCategoryChild {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 1rem;
+
+
+        .wrapFormCategoryChildItem {
+            display: flex;
+            justify-content: space-around;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            margin: 16px 0;
+
+
+            .formItem-input {
+                flex: 1;
+            }
+
+            .wrapArrayField {
+                flex: 0.8;
+                display: flex !important;
+                flex-direction: column;
+
+                .wrapArrayFieldItem {
+                    width: 100%;
+                    flex: 1;
+                }
+            }
+        }
+    }
+
+
+}

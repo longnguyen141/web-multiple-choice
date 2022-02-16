@@ -1,0 +1,81 @@
+.containerTakeExam {
+    .wrapContentQuestion {
+
+        p {
+            font-size: 18px;
+        }
+
+        .wrapQuestionItem {
+            padding: 5px 10px;
+
+            * {
+
+                cursor: pointer;
+            }
+
+            input {
+                margin-right: 8px;
+            }
+
+        }
+
+    }
+
+    .wrapButton {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapInfoExam {
+        position: fixed;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 120px;
+        width: 320px;
+        top: 35%;
+        right: 0;
+        padding: 10px;
+        padding-left: 20px;
+        border: 1px solid #1976d2;
+        transition: all 0.5s ease-in-out;
+        background-color: #fff;
+
+
+        h3 {
+            font-size: 16px;
+        }
+
+        &.active {
+            transform: translateX(95%);
+        }
+
+        .btnShowInfo {
+            position: absolute;
+            top: 45%;
+            left: -6%;
+
+            transform: scale(1.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #fff;
+            background-color: #fff;
+            color: #1976d2;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            padding: 0;
+            margin: 0;
+            transition: all 0.5s ease-in-out;
+
+            &.active {
+                transform: scale(1.5) rotateZ(180deg);
+            }
+
+        }
+    }
+}
